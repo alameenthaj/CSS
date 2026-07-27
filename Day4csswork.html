@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Card</title>
+     <style> 
+     
+      body{
+            font-family:'Courier New', Courier, monospace;
+            background:#f4f4f4;
+            padding-top:70px;
+        }
+     header{
+       position: fixed;
+       top: 0;
+       left: 0;
+       color: red;
+       width: 100%;
+       text-align: center;
+     }
+     
+     .card{
+        display: flex;
+        width: 50%;
+        height: 300px;
+        overflow: auto;
+        background-color:azure;
+        border-color: aqua;
+        border-style:double;
+        padding: 40px;
+        margin: auto;
+
+     }
+     .profile-image{
+        float: left;
+        width: 100px;
+        height: 100px;
+     }
+
+     .content {
+        margin-right: 150px;
+        text-align: center; 
+        width: 70%; 
+     }
+     .content p{
+        position: relative;
+        left: 10px;
+
+     }
+    
+     .contact{
+        width: 25%;
+     }
+     .content p{
+        width: 400px;
+        text-align: left;
+        letter-spacing: 2px;
+        word-spacing: 3px;
+
+     }
+
+    
+     </style>
+</head>
+<body>
+    <header>
+      <h1>Company Contact Card</h1><br><br><br><br>
+    </header>
+
+    <div class="card">
+        <!-- <img src="https://photoaid.com/images/cms/passport_photo_with_acceptable_religious_headgear_a922e6d1f5.png?quality=80&amp;format=webp&amp;width=1920"  alt="Profile Image" class="profile-image"> -->
+
+       <div class="content">
+         <h2>FAYZA</h2>
+         <h4>Java Developer</h4>
+
+            <p><img src="https://photoaid.com/images/cms/passport_photo_with_acceptable_religious_headgear_a922e6d1f5.png?quality=80&amp;format=webp&amp;width=1920"  alt="Profile Image" class="profile-image" style="width:170px;height:170px;margin-right:15px;">
+                   Fayza is a Java Developer.She completed MCA from Mohandas College of Engineering.She worked on two academics projects.
+                Major project named <i><b>'BLOOD GROUP DETECTION USING FINGERPRINT'</b></i>.During academics she gained knowledge in SQL and 
+                    Cloud Computing Technologies.He specializes  in front-end technologies and enjoys creating responsive, user-friendly
+                      applications. She works closely with clients and team members to
+                        deliver high-quality software solutions. </p>
+        </div>
+
+        <div class="contact">
+            <h3>Contact Info</h3>
+             <p><b>Phone Number:<b><br>
+                 6238324566</p><br>
+             <p><b>Email:</b><br>
+                 fayza@gmail.com</p> 
+        </div>   
+
+    </div>
+     
+</body>
+</html>
