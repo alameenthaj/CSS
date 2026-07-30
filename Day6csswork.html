@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Featured Blog Section</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+}
+
+.blog-section{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:20px;
+    background:white;
+    flex-wrap:wrap;
+}
+
+.blog{
+    width:300px;
+    background:#fff;
+    border:1px solid #ccc;
+    border-radius:10px;
+    overflow:hidden;
+    text-align:center;
+    padding-bottom:15px;
+}
+
+.blog h2{
+    margin:15px 0;
+}
+
+.blog p{
+    padding:10px;
+}
+
+/* Style only images ending with .jpg */
+img[src$=".jpg"]{
+    width:100%;
+    height:200px;
+    border-top-right-radius:25px;
+    border-bottom-left-radius:25px;
+}
+
+/* Highlight only https links */
+a[href^="https"]{
+    color:red;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+a{
+    color:blue;
+    text-decoration:none;
+}
+
+/* Small Screens */
+@media screen and (max-width:600px){
+
+    .blog-section{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .blog{
+        width:90%;
+        font-size:14px;
+    }
+
+}
+
+/* Portrait Orientation */
+@media screen and (orientation:portrait){
+
+    .blog-section{
+        background:lightyellow;
+    }
+
+}
+
+</style>
+
+</head>
+<body>
+
+<section class="blog-section">
+
+    <div class="blog">
+        <h2>HTML Basics</h2>
+        <img src="https://picsum.photos/id/180/300/200.jpg" alt="HTML">
+        <p>Learn the fundamentals of HTML and build webpages.</p>
+        <a href="https://example.com/html">Read More</a>
+    </div>
+
+    <div class="blog">
+        <h2>CSS Styling</h2>
+        <img src="https://picsum.photos/id/48/300/200.jpg" alt="CSS">
+        <p>Learn how CSS makes websites beautiful and responsive.</p>
+        <a href="http://example.com/css">Read More</a>
+    </div>
+
+    <div class="blog">
+        <h2>JavaScript Guide</h2>
+        <img src="https://picsum.photos/id/20/300/200.jpg" alt="JavaScript">
+        <p>Start learning JavaScript to create interactive websites.</p>
+        <a href="https://example.com/javascript">Read More</a>
+    </div>
+
+</section>
+
+</body>
+</html>
