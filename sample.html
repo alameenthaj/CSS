@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Login Form</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #d9d5e8, #f5e2d0);
+        }
+
+        .login-container{
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-box{
+            background-color: white;
+            width: 420px;
+            padding: 45px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        h2{
+            color: #c56b45;
+            margin-bottom: 25px;
+            font-size: 28px;
+        }
+
+        label{
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="email"],
+        input[type="password"]{
+            width: 100%;
+            height: 38px;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+        }
+
+        .remember{
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .remember input{
+            margin-right: 7px;
+        }
+
+        .remember label{
+            margin: 0;
+            font-weight: normal;
+        }
+
+        button{
+            width: 100%;
+            height: 38px;
+            border: none;
+            background-color: #e9784d;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Responsive design for mobile */
+        @media screen and (max-width: 600px){
+
+            .login-container{
+                padding: 20px;
+            }
+
+            .login-box{
+                width: 100%;
+                padding: 35px 25px;
+            }
+
+            h2{
+                font-size: 25px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <div class="login-box">
+
+            <h2>Login Form</h2>
+
+            <form>
+
+                <label>Email:</label>
+                <input type="email" name="email">
+
+                <label>Password:</label>
+                <input type="password" name="password">
+
+                <div class="remember">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember Me</label>
+                </div>
+
+                <button type="submit">Login</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
