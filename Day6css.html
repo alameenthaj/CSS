@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card{
+            width: 300px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Product Image */
+        .product-img{
+            width: 100%;
+            border: 2px solid black;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        h2{
+            font-size: 24px;
+        }
+
+        button{
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: darkgreen;
+        }
+
+        /* Small Screens */
+        @media (max-width: 600px){
+            .card{
+                text-align: center;
+            }
+
+            h2{
+                font-size: 18px;
+            }
+
+            button{
+                font-size: 14px;
+            }
+        }
+
+        /* Landscape Mode */
+        @media (orientation: landscape){
+            .card{
+                background-color: lightblue;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500"
+             alt="Product"
+             class="product-img">
+
+        <h2>Running Shoes</h2>
+
+        <button>Buy Now</button>
+    </div>
+
+</body>
+</html>
