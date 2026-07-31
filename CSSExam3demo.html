@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Login</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, sans-serif;
+            background:#f2f2f2;
+        }
+
+        .container{
+            display:flex;
+            height:100vh;
+        }
+           
+        .left{
+            width: 50%;
+             /* background:linear-gradient(to bottom,  #b88cdbaf,rgba(197, 185, 116, 0.945)); */
+             background:linear-gradient(to bottom,  #8F9CC6,#BDAFBE,#F5C293)  ;
+        }
+
+        .right{
+            width:50%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:white;
+        }
+
+        .login-box{
+            width:90%;
+            max-width:800px;
+        }
+
+        h1{
+            color:tomato;
+            margin-bottom:20px;
+        }
+
+        label{
+            font-weight:bold;
+        }
+
+        input[type="email"],
+        input[type="password"]{
+            width:100%;
+            padding:10px;
+            margin:8px 0 15px;
+        }
+
+        button{
+            width:100%;
+            padding:10px;
+            background:tomato;
+            color:white;
+            border:none;
+            cursor:pointer;
+        }
+
+        /* Mobile */
+        @media (max-width:600px){
+
+            .container{
+                display:block;
+            }
+
+            .left{
+                display:none;
+            }
+
+            .right{
+                width:100%;
+                height:100vh;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="left"></div>
+
+    <div class="right">
+
+        <div class="login-box">
+
+            <h1>Login Form</h1>
+
+            <label>Email :</label>
+            <input type="email">
+
+            <label>Password :</label>
+            <input type="password">
+
+            <p>
+                <input type="checkbox"> Remember Me
+            </p>
+
+            <br>
+
+            <button>Login</button>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
